@@ -1,11 +1,18 @@
 import React from 'react'
-import logo from './logo.svg'
+import { faMeteor, faStarOfLife } from '@fortawesome/free-solid-svg-icons'
 import './App.css'
+import { Animation } from './components/animation.component'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-header">
+        <p>How Slow is the The Speed of Light?</p>
+      </div>
+      <Animation icon={faStarOfLife} className="Animation-icon" />
+      <Animation icon={faMeteor} className="Animation-icon-earth" />
+
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -18,7 +25,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   )
 }

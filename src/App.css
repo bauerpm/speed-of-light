@@ -1,10 +1,13 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  flex-direction: column;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-subtitle {
+  font-size: calc(10px + 1vmin);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,14 +17,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #61dafb;
+  height: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #282c34;
 }
 
 .App-link {
@@ -35,4 +38,37 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Animation-icon {
+  width: 100px;
+  height: 100px;
+  color: yellow;
+  position: relative;
+  animation-name: example;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 1200px;
+    top: 0px;
+  }
+}
+
+.Animation-icon-earth {
+  font-size: 40px;
+  color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 500s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform: rotate(225deg);
 }
