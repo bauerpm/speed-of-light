@@ -7,11 +7,9 @@
   text-align: center;
   background-image: url('./assets/stars-1436950_1920.jpg');
   background-size: cover;
-  display: flex;
-  flex: 1;
   min-height: 100vh;
-  flex-direction: column;
-  width: 100%;
+  min-width: 1850px;
+  max-width: 2850px;
 }
 .App-subtitle {
   font-size: calc(10px + 2vmin);
@@ -77,6 +75,7 @@
 }
 .paragraph {
   width: 300px;
+  min-width: 300px;
   height: 675px;
   margin-top: 50px;
   margin-left: 50px;
