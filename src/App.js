@@ -57,9 +57,20 @@ function App() {
           </div>
         </div>
         <div className="paragraph">
-          <p className="label">lj;lskjfds</p>
+          <p className="label">The Speed of Light</p>
+          <p className="key">
+            These animations represent the relative comparison between the speed
+            of light and the velocities of various celestial bodies. The icon
+            representing light moves across the screen in 0.5s. The other
+            objects are scaled to the correct ratio in relation to it. Light is
+            approximately 516 times faster than the Milky Way, 1498 times faster
+            than the Solar System, 6,166 times faster than the fastest known
+            comet, 2I/Borisov, and 10,000 times faster than the Earths orbit
+            around the sun.
+          </p>
         </div>
       </div>
+      <p className="copyright">&copy; 2020 Tommy Bauer</p>
     </div>
   )
 }

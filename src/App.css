@@ -14,7 +14,7 @@
   width: 100%;
 }
 .App-subtitle {
-  font-size: calc(10px + 1vmin);
+  font-size: calc(10px + 2vmin);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -83,6 +83,15 @@
   background-color: rgb(43, 43, 43);
 }
 
+.key {
+  text-align: left;
+  padding: 20px;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
 @keyframes example {
   0% {
     left: 0px;
@@ -136,4 +145,13 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   transform: rotate(225deg);
+}
+
+.copyright {
+  text-align: left;
+  padding: 50px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 36px;
 }
