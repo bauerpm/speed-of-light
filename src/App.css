@@ -1,10 +1,17 @@
+@font-face {
+  font-family: Kanit;
+  src: url('./assets/Kanit-Bold.ttf');
+}
+
 .App {
   text-align: center;
-  background-color: #282c34;
+  background-image: url('./assets/stars-1436950_1920.jpg');
+  background-size: cover;
   display: flex;
   flex: 1;
   min-height: 100vh;
   flex-direction: column;
+  width: 100%;
 }
 .App-subtitle {
   font-size: calc(10px + 1vmin);
@@ -17,7 +24,7 @@
 }
 
 .App-header {
-  background-color: #61dafb;
+  background-color: #619efb;
   height: 150px;
   display: flex;
   flex-direction: column;
@@ -25,10 +32,11 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #282c34;
+  font-family: Kanit;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #619efbe0;
 }
 
 @keyframes App-logo-spin {
@@ -50,6 +58,32 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+.label {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.rowContainer {
+  display: flex;
+  flex-direction: row;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 100px 20px 100px;
+  width: 1200px;
+}
+.textcontainer {
+  width: 250px;
+}
+.paragraph {
+  width: 300px;
+  margin-top: 50px;
+  margin-left: 50px;
+  height: 65vh;
+  background-color: rgb(43, 43, 43);
+}
 
 @keyframes example {
   0% {
@@ -57,17 +91,50 @@
     top: 0px;
   }
   100% {
-    left: 1200px;
+    left: 1000px;
     top: 0px;
   }
 }
 
 .Animation-icon-earth {
   font-size: 40px;
+  color: blue;
+  position: relative;
+  animation-name: example;
+  animation-duration: 5000s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform: rotate(225deg);
+}
+
+.Animation-icon-comet {
+  font-size: 40px;
   color: red;
   position: relative;
   animation-name: example;
-  animation-duration: 500s;
+  animation-duration: 3083s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform: rotate(225deg);
+}
+
+.Animation-icon-milkyway {
+  font-size: 40px;
+  color: yellowgreen;
+  position: relative;
+  animation-name: example;
+  animation-duration: 258s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform: rotate(225deg);
+}
+
+.Animation-icon-solarsystem {
+  font-size: 40px;
+  color: orange;
+  position: relative;
+  animation-name: example;
+  animation-duration: 749s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   transform: rotate(225deg);
