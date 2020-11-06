@@ -8,6 +8,7 @@
   background-image: url('./assets/stars-1436950_1920.jpg');
   background-size: cover;
   min-height: 100vh;
+  min-width: 1850px;
   max-width: 2850px;
 }
 .App-subtitle {
